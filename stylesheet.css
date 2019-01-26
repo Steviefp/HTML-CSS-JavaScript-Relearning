@@ -33,22 +33,31 @@ body{
 }
 
 #navbar{
-    display: block;
+
     list-style-type: none;
-    width:auto;
-    padding:8px;
-    background:#333;
     margin:0;
-    height:auto;
-    border: 3px solid black;
-    overflow:hidden;
+    padding:0;
+    height:fit-content;
+    background:#333;
+    overflow: hidden;
 }
 #navbarLI{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
     text-align: center;
-    display: inline;
+    float: left;
     color:rgb(255, 255, 255);
-    padding: 8px 2px;
     margin:0;
+    padding: 8px 8px;
+
+}
+.active{
+    background-color: darkslateblue;
+}
+#navbarLIA{
     text-decoration: none;
+    color: aliceblue;
+}
+#navbarLI:hover{
+    background-color: black;
 }
