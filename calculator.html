@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <h1>Hello to my calculator that i didn't even use javascript for :(, pure html i believe, vv unlucky</h1>
+
+        <!-- calculator part -->
+        <div class=container>
+            <form name=calculator >
+                    <input type="text" name="display" id="display" disabled>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" name=1 value=1 onclick="calculator.display.value +=1">
+                        </td>
+                        <td>
+                            <input type="button" name=2 value=2 onclick="calculator.display.value +=2">
+                        </td>
+                        <td>
+                            <input type="button" name=3 value=3 onclick="calculator.display.value +=3">
+                        </td>
+                        <td>
+                            <input type="button" name=plus value=+ onclick="calculator.display.value +='+'">
+                        </td>
+                
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name=4 value=4 onclick="calculator.display.value +=4">
+                        </td>
+                        <td>
+                            <input type="button" name=5 value=5 onclick="calculator.display.value +=5">
+                        </td>
+                        <td>
+                            <input type="button" name=6 value=6 onclick="calculator.display.value +=6">
+                        </td>
+                        <td>
+                            <input type="button" name=minus value=- onclick="calculator.display.value +='-'">
+                        </td>
+                
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name=7 value=7 onclick="calculator.display.value +=7">
+                        </td>
+                        <td>
+                            <input type="button" name=8 value=8 onclick="calculator.display.value +=8">
+                        </td>
+                        <td>
+                            <input type="button" name=9 value=9 onclick="calculator.display.value +=9">
+                        </td>
+                        <td>
+                            <input type="button" name=times value=* onclick="calculator.display.value +='*'">
+                        </td>
+                
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- clear button -->
+                            <input type="button" name=calcClear value="C" onclick="calculator.display.value =''">
+                        </td>
+                        <td>
+                            <input type="button" name=0 value=0 onclick="calculator.display.value +=0">
+                        </td>
+                        <td>
+                            <!-- equals button -->
+                            <input type="button" name=equals value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+                        </td>
+                        <td>
+                            <input type="button" name=divide value=/ onclick="calculator.display.value +='/'">
+                        </td>
+                
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
+<!-- nav bar -->
+        <ul id=navbar>
+                <li id=navbarLI><a id=navbarLIA href="index.html">Home</li></a>
+                <li id=navbarLI><a id=navbarLIA href="http://huronschools.com/">Login</li></a>
+                <li id=navbarLI class=active><a id=navbarLIA href="calculator.html">Calculator</li></a>
+            </ol>
+    </body>
+</html>
